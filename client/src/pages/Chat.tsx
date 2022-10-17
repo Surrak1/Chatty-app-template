@@ -7,6 +7,7 @@ import Welcome from "../components/Welcome";
 import { iRoom } from "../interfaces/iRoom";
 
 export default function Chat() {
+  
   const navigate = useNavigate();
   const [rooms, setRooms] = useState([]);
   const [currentRoom, setCurrentRoom] = useState<iRoom | undefined>(undefined);
@@ -20,6 +21,7 @@ export default function Chat() {
   const handleRoomChange = (room: iRoom) => {
     setCurrentRoom(room);
   };
+
   return (
     <>
       <Container>
